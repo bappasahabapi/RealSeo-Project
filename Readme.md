@@ -4,6 +4,7 @@ If you are a mac user then, As i am using mac silicon:
 
     brew install mysql
     brew services start mysql
+    brew services stop mysql
     mysql_secure_installation
 
 ## project demo 👇
