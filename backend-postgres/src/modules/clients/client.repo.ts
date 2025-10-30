@@ -51,39 +51,7 @@ const SORT_COLUMNS = new Set([
 ]);
 
 export const ClientRepo = {
-//   async list(params: ListParams = {}) {
-//     const {
-//       search = "",
-//       sort = "created_at",
-//       order = "desc",
-//       page = 1,
-//       pageSize = 10,
-//     } = params;
-//     const sortCol = SORT_COLUMNS.has(sort!) ? sort : "created_at";
-//     const sortDir = order?.toLowerCase() === "asc" ? "ASC" : "DESC";
-//     const offset = (page - 1) * pageSize;
-//     // const values: any[] = [];
-    
-// let where = "";
-// const vals: any[] = [];
-// if (search) {
-//   const like = `%${search}%`;
-//   where = `WHERE (first_name ILIKE $1 OR last_name ILIKE $1 OR email ILIKE $1 OR company ILIKE $1 OR price ILIKE $1 OR comments ILIKE $1 OR address ILIKE $1 OR cell ILIKE $1)`;
-//   vals.push(like);
-// }
-// const values = vals.slice();
-// values.push(pageSize, offset);
-//     const { rows } = await pool.query(sql, values);
-//     const countRes: any = await pool.query(
-//       "SELECT FOUND_ROWS() AS total"
-//     );
-//     return {
-//       data: rows as any[],
-//       total: (count[0] as any).total as number,
-//       page,
-//       pageSize,
-//     };
-//   },
+
   async list(params: ListParams = {}) {
   const {
     search = "",
